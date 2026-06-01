@@ -136,7 +136,7 @@ async function inipesan() {
     preConfirm: () => Swal.getInput()?.value?.trim()
   });
 
-  const validNames = ['Trang', 'Bee','Be','be','trang','bee'];
+  const validNames = ['Trang', 'Bee','Be','be','trang','bee','Yen Trang','Yến Trang','Nguyen Yen Trang','Nguyễn Yến Trang','Yến Trang 13/5',];
   
   if (typedName && validNames.includes(typedName)) {
     userName = typedName;
