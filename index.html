@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp 1/6 tặng Be 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div id="startStage">
+    <img src="giftbox.png" alt="Hộp quà" class="gift-image" onclick="startApp()" />
+    <p>Nhấn vào Bee để nhận quà 1-6 nhen ❤️ !</p>
+  </div>
+  <div id="inputStage" style="display:none;"></div>
+  <div id="loveStage" style="display:none;">
+    <p id="lovePrompt">Chạm đủ 5 love ❤️ để nhận combo quà từ anh nè</p>
+    <div id="loveIcons">
+      <span class="love-icon" onclick="tapLove(1)">❤️</span>
+      <span class="love-icon" onclick="tapLove(2)">❤️</span>
+      <span class="love-icon" onclick="tapLove(3)">❤️</span>
+      <span class="love-icon" onclick="tapLove(4)">❤️</span>
+      <span class="love-icon" onclick="tapLove(5)">❤️</span>
+    </div>
+  </div>
+  <div id="cardStage" style="display:none;">
+    <div class="card">
+      <img src="cute.gif" alt="Cute gif" class="gif" />
+      <p id="loveMsg"></p>
+    </div>
+  </div>
+  <audio id="bgMusic" src="phoncert.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
