@@ -136,7 +136,9 @@ async function inipesan() {
     preConfirm: () => Swal.getInput()?.value?.trim()
   });
 
-  if (typedName) {
+  const validNames = ['Trang', 'Bee','Be','be','trang','bee'];
+  
+  if (typedName && validNames.includes(typedName)) {
     userName = typedName;
     loveTaps.clear();
     document.querySelectorAll('.love-icon').forEach(icon =>
@@ -146,9 +148,10 @@ async function inipesan() {
   } else {
     await Swal.fire({
       icon: 'warning',
-      title: 'Hư nè để không tên ư',
-      confirmButtonText: 'Nhập lại cho A ngay'
+      title: 'lêu lêu sai ròi sai ròi',
+      confirmButtonText: 'Nhập lại ik nè '
     });
     inipesan();
   }
 }
+
